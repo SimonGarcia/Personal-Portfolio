@@ -277,6 +277,20 @@ a {
 }
 
 .aside .logo {
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aside .logo img {
+    width: 150px;
+    height: 150px;
+    padding: 0px;
+}
+
+
+/* .aside .logo {
     padding: 30px 0;
 }
 
@@ -309,6 +323,7 @@ a {
     bottom: 0;
     right: 0;
 }
+ */
 
 .aside .nav-toggler {
     height: 40px;
@@ -417,37 +432,63 @@ a {
 ////////////////////////////////////*/
 
 .home {
+    background-image: url(/images/bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     min-height: 100vh;
     display: -ms-flexbox;
     display: flex;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .home .intro {
-    text-align: center;
+    width: 500px;
+    display: block;
 }
 
-.home .intro img {
+
+/* .home .intro img {
     height: 200px;
     width: 200px;
     border-radius: 50%;
     display: inline-block;
     border: 8px solid #ffffff;
-}
+} */
 
 .home .intro h1 {
-    font-size: 30px;
+    font-size: 60px;
+    line-height: 1.3;
+    font-weight: 700;
     color: #302e4d;
     font-family: 'Rubik', sans-serif;
+    margin: 10px 0 8px 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.home .intro h2 {
+    font-size: 50px;
+    line-height: 1.3;
     font-weight: 700;
-    margin: 20px 0 8px;
+    color: #302e4d;
+    font-family: 'Rubik', sans-serif;
+    margin: 10px 0 8px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .home .intro p {
+    width: 300px;
     font-size: 16px;
     font-weight: 500;
-    margin: 0;
+    margin: 0 0 50px 0;
     line-height: 22px;
     color: #504e70;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .home .intro .social-links {
@@ -500,7 +541,9 @@ a {
     font-size: 16px;
     line-height: 25px;
     color: #504e70;
-    margin: 0;
+    margin: 0 0 10px 0;
+    text-align: justify;
+    width: 700px;
 }
 
 .about .about-content .personal-info {
@@ -633,7 +676,6 @@ a {
     padding-left: 37px;
     padding-bottom: 50px;
     height: 170px;
-    /*Quitar cuando hayan mas de 3 campos en una de las tarjetas de experiencia o educacion*/
 }
 
 .about .about-content .timeline .timeline-item:last-child {
@@ -1140,56 +1182,9 @@ a {
 
 .switch .fas {
     font-size: 25px;
-    margin-top: 100px;
+    margin-top: 70px;
     cursor: pointer;
 }
-
-
-/* .switch {
-    width: 60px;
-    background-color: #343d5b;
-    border-radius: 1000px;
-    border: none;
-    position: relative;
-    cursor: pointer;
-    display: flex;
-    outline: none;
-}
-
-.switch::after {
-    content: "";
-    display: block;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    background-color: #f1f1f1;
-    top: 0;
-    left: 0;
-    right: unset;
-    border-radius: 100px;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
-}
-
-.switch.active {
-    background: orange;
-    color: #000000;
-}
-
-.switch.active::after {
-    right: 0;
-    left: unset;
-}
-
-.switch span {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    display: block;
-    background: none;
-    color: #fff;
-} */
 
 body.dark .section {
     background-color: #15202B;
@@ -1212,8 +1207,11 @@ body.dark .about .about-content .personal-info .info-item p,
 body.dark .about .about-content .about-text h3,
 body.dark .section-title h2,
 body.dark .home .intro h1,
+body.dark .home .intro h2,
 body.dark .aside .logo a {
     color: #ffffff;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 body.dark .aside .copyright-text,
@@ -1224,6 +1222,8 @@ body.dark .about .about-content .personal-info .info-item p span,
 body.dark .about .about-content .about-text p,
 body.dark .home .intro p {
     color: #e9e9e9;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 body.dark .aside,
@@ -1234,11 +1234,15 @@ body.dark .about-content .personal-info .info-item p,
 body.dark .aside .nav li a {
     color: #ffffff;
     border-color: #393939;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 body.dark .shadow-dark {
     -webkit-box-shadow: none;
     box-shadow: none;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 
@@ -1274,6 +1278,9 @@ body.dark .shadow-dark {
         display: block;
         margin-left: 0;
     }
+    .switch .fas {
+        margin-top: 50px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -1283,6 +1290,15 @@ body.dark .shadow-dark {
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 50%;
+    }
+    .home .intro h1 {
+        font-size: 40px;
+    }
+    .home .intro h2 {
+        font-size: 30px;
+    }
+    .home .intro p {
+        width: 250px;
     }
 }
 
@@ -1309,8 +1325,5 @@ body.dark .shadow-dark {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
-    }
-    .switch .fas {
-        margin-top: 20px;
     }
 }

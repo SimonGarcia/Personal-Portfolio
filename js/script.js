@@ -166,6 +166,7 @@ function updateNav(element) {
     }
 }
 
+//Hace funcionar el boton de Hire Me en about para enviar al formulario de contacto
 document.querySelector(".hire-me").addEventListener("click", function() {
     const sectionIndex = this.getAttribute("data-section-index");
     /* console.log(sectionIndex); */

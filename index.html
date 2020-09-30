@@ -33,7 +33,7 @@
             <div class="aside-inner">
                 <!-- Logo -->
                 <div class="logo">
-                    <a href="">LOGO</a>
+                    <a href=""><img src="images/logo/black.png" alt="Logo" id="logo"></a>
                 </div>
                 <!-- Nav -->
                 <ul class="nav">
@@ -44,18 +44,14 @@
                     <li><a href="#contact"><i class="fas fa-comments"></i> Contact</a></li>
                 </ul>
 
-                <!-- <button class="switch" id="switch">
-                    <span><i class="fas fa-sun"></i></span>
-                    <span><i class="fas fa-moon"></i></span>
-                </button> -->
 
                 <!-- Copiright -->
                 <div class="copyright-text">
                     &copy; 2020 Simón García
                 </div>
                 <!-- Night Mode Button -->
-                <a class="switch" id="switch"><i class="fas fa-lightbulb"></i></a>
-
+                <!-- <a class="switch" id="switch" onclick="changeImage()"><i class="fas fa-lightbulb"></i></a>
+ -->
             </div>
         </div>
         <!-- Aside End -->
@@ -66,15 +62,16 @@
             <!-- Home Section -->
             <section class="home section active" id="home">
                 <div class="container">
-                    <div class="intro">
-                        <img class="shadow-dark" src="" alt="Profile">
-                        <h1>Simón García</h1>
-                        <p>I'm a Web Developer</p>
+                    <div class="intro padd-15">
+                        <!-- <img class="shadow-dark" src="images/about.jpg" alt="Profile"> -->
+                        <h2>Hello!</h2>
+                        <h1>I'm Simón</h1>
+                        <p>I'm a Web Developer who code very instinctively, but your ideas are welcome.</p>
                         <div class="social-links">
-                            <a href=""><i class="fab fa-linkedin-in"></i></a>
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                            <a href=""><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/sim%C3%B3n-garc%C3%ADa-b00393120/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://twitter.com/SimonG16" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/simongarcia_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://github.com/SimonGarcia" target="_blank"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                 </div>
@@ -124,11 +121,11 @@
                                             <p>City: <span>Puerto Ordaz - Venezuela</span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p>Freelance: <span>Anytime</span></p>
+                                            <p>Availability: <span>Anytime</span></p>
                                         </div>
                                         <div class="row">
                                             <div class="buttoms padd-15">
-                                                <a href="#" class="btn">Download CV</a>
+                                                <a href="images/Simon Garcia -Curriculum Vitae.pdf" target="_blank" class="btn">Download CV</a>
                                                 <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me!</a>
                                             </div>
                                         </div>
@@ -153,7 +150,7 @@
                                             </div>
                                         </div>
                                         <div class="skill-item">
-                                            <h5>Bootstrap</h5>
+                                            <h5>SQL - MongoDB</h5>
                                             <div class="progress">
                                                 <div class="progress-in" style="width: 70%;">
                                                     <div class="skill-percent">70%</div>
@@ -191,21 +188,7 @@
                             <div class="services-item-inner">
                                 <div class="icon"><i class="fas fa-laptop"></i></div>
                                 <h4>Web Design</h4>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime recusandae labore incidunt eius temporibus expedita. In, mollitia. Est aliquam nemo eius numquam velit, aliquid perferendis. Deserunt obcaecati rerum illum
-                                    qui.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Service Item End -->
-
-                        <!-- Service Item -->
-                        <div class="services-item padd-15">
-                            <div class="services-item-inner">
-                                <div class="icon"><i class="fas fa-camera"></i></div>
-                                <h4>Photography</h4>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime recusandae labore incidunt eius temporibus expedita. In, mollitia. Est aliquam nemo eius numquam velit, aliquid perferendis. Deserunt obcaecati rerum illum
-                                    qui.
-                                </p>
+                                <p>A website with simple content structure, clean design patterns, and thoughtful interactions, is the most awesome thing. </p>
                             </div>
                         </div>
                         <!-- Service Item End -->
@@ -215,8 +198,7 @@
                             <div class="services-item-inner">
                                 <div class="icon"><i class="fas fa-code"></i></div>
                                 <h4>Web Development</h4>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime recusandae labore incidunt eius temporibus expedita. In, mollitia. Est aliquam nemo eius numquam velit, aliquid perferendis. Deserunt obcaecati rerum illum
-                                    qui.
+                                <p>Bringing your ideas to life in the browser to build websites for an optimal user experience that achieves your needs.
                                 </p>
                             </div>
                         </div>
@@ -224,6 +206,17 @@
 
                         <!-- Service Item -->
                         <div class="services-item padd-15">
+                            <div class="services-item-inner">
+                                <div class="icon"><i class="fas fa-mobile-alt"></i></i>
+                                </div>
+                                <h4>Mobile - Friendly</h4>
+                                <p>A responsive design makes your website accessible to all users, no matter what devices they are using. </p>
+                            </div>
+                        </div>
+                        <!-- Service Item End -->
+
+                        <!-- Service Item -->
+                        <div class="services-item padd-15 hidden">
                             <div class="services-item-inner">
                                 <div class="icon"><i class="fas fa-film"></i></div>
                                 <h4>Video Editing</h4>
@@ -235,7 +228,7 @@
                         <!-- Service Item End -->
 
                         <!-- Service Item -->
-                        <div class="services-item padd-15">
+                        <div class="services-item padd-15 hidden">
                             <div class="services-item-inner">
                                 <div class="icon"><i class="fas fa-rocket"></i></div>
                                 <h4>Seo Optimization</h4>
@@ -247,7 +240,7 @@
                         <!-- Service Item End -->
 
                         <!-- Service Item -->
-                        <div class="services-item padd-15">
+                        <div class="services-item padd-15 hidden">
                             <div class="services-item-inner">
                                 <div class="icon"><i class="fas fa-paint-brush"></i></div>
                                 <h4>Logo Design</h4>
@@ -283,12 +276,12 @@
                         <div class="portfolio-item padd-15" data-category="web-design">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
-                                    <img src="images/portfolio/1.jpg" alt="portfolio">
+                                    <img src="images/portfolio/Produck.jpg" alt="Produck">
                                 </div>
                                 <div class="portfolio-info">
-                                    <h4>https://www.produck.io</h4>
+                                    <h4>Produck</h4>
                                     <div class="icon">
-                                        <!-- <a href="" target="_blank"><i class="fa fa-search"></i></a> para enviar a la url del proyecto -->
+                                        <!-- <a href="https://preview.webflow.com/preview/bonschallenge-dd3a58?utm_medium=preview_link&utm_source=designer&utm_content=bonschallenge-dd3a58&preview=2d1bca030b907d91b34dbff921289c7d&mode=preview" target="_blank"><i class="fa fa-search"></i></a> para enviar a la url del proyecto -->
                                         <i class="fas fa-search"></i>
                                     </div>
                                 </div>
@@ -300,10 +293,10 @@
                         <div class="portfolio-item padd-15" data-category="web-design">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
-                                    <img src="images/portfolio/2.jpg" alt="portfolio">
+                                    <img src="images/portfolio/BienesRaices.jpg" alt="portfolio">
                                 </div>
                                 <div class="portfolio-info">
-                                    <h4>Web Design</h4>
+                                    <h4>Bienes Raices</h4>
                                     <div class="icon">
                                         <!-- <a href="" target="_blank"><i class="fa fa-search"></i></a> -->
                                         <i class="fas fa-search"></i>
@@ -314,7 +307,7 @@
                         <!-- Portfolio Item End-->
 
                         <!-- Portfolio Item -->
-                        <div class="portfolio-item padd-15" data-category="web-design">
+                        <div class="portfolio-item padd-15 hidden" data-category="web-design">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
                                     <img src="images/portfolio/3.jpg" alt="portfolio">
@@ -331,7 +324,7 @@
                         <!-- Portfolio Item End-->
 
                         <!-- Portfolio Item -->
-                        <div class="portfolio-item padd-15" data-category="wordpress">
+                        <div class="portfolio-item padd-15 hidden" data-category="wordpress">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
                                     <img src="images/portfolio/4.jpg" alt="portfolio">
@@ -348,7 +341,7 @@
                         <!-- Portfolio Item End-->
 
                         <!-- Portfolio Item -->
-                        <div class="portfolio-item padd-15" data-category="photography">
+                        <div class="portfolio-item padd-15 hidden" data-category="photography">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
                                     <img src="images/portfolio/5.jpg" alt="portfolio">
@@ -365,7 +358,7 @@
                         <!-- Portfolio Item End-->
 
                         <!-- Portfolio Item -->
-                        <div class="portfolio-item padd-15" data-category="wordpress">
+                        <div class="portfolio-item padd-15 hidden" data-category="wordpress">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
                                     <img src="images/portfolio/6.jpg" alt="portfolio">
@@ -421,30 +414,30 @@
 
                     <!-- Contact Form -->
                     <div class="row">
-                        <form action="" class="contact-form padd-15">
+                        <form action="email.php" method="POST" class="contact-form padd-15">
                             <div class="row">
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name *">
+                                        <input type="text" name="name" class="form-control" placeholder="Name *" required>
                                     </div>
                                 </div>
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Email *">
+                                        <input type="text" name="email" class="form-control" placeholder="Email *" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject *">
+                                        <input type="text" name="subject" class="form-control" placeholder="Subject *" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <textarea class="form-control" placeholder="Your Message... *"></textarea>
+                                        <textarea name="message" class="form-control" placeholder="Your Message... *" required></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -489,8 +482,8 @@
 
     <!-- Template JS -->
     <script src="js/script.js"></script>
-
     <script src="js/switcher.js"></script>
+
 </body>
 
 </html>
